@@ -5,7 +5,7 @@ class Employee:
     def __init__(self, name, contractLength, commissionType, wage, comission):
         self.name = name
         self.contract = contractLength
-        self.comissionType = comissionType
+        self.comissionType = commissionType
         self.comission = commission
         self.wage = wage
 
