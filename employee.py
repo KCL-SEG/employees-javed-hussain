@@ -16,7 +16,7 @@ class Employee:
         if self.contract == 1:
             return f"{self.name} works on a monthly salary of {self.wage}. Their total pay is {self.get_pay()}."
         else:
-            return f"{self.name} works on a contract of {self.contract} at {self.wage}/hour. Their total pay is {self.get_pay()}."
+            return f"{self.name} works on a contract of {self.contract} hours at {self.wage}/hour. Their total pay is {self.get_pay()}."
         
 
 
