@@ -2,7 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name, contractLength, commissionType, wage, comission):
+    def __init__(self, name, contractLength, commissionType, wage, commission):
         self.name = name
         self.contract = contractLength
         self.comissionType = commissionType
