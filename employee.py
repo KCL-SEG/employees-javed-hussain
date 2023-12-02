@@ -21,7 +21,7 @@ class Employee:
             string += f"{self.name} works on a contract of {self.contract} hours at {self.wage}/hour"
         if self.comissionType == 1:
             string += f" and receives a bonus commission of {self.commission}."
-        else if self.comissionType == 0:
+        elif self.comissionType == 0:
             string += f"."
         else:
             string += f" and receives a commission for {self.commissionType} contract(s) at {self.commission}/contract."
