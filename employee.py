@@ -5,12 +5,12 @@ class Employee:
     def __init__(self, name, contractLength, commissionType, wage, commission):
         self.name = name
         self.contract = contractLength
-        self.comissionType = commissionType
-        self.comission = commission
+        self.commissionType = commissionType
+        self.commission = commission
         self.wage = wage
 
     def get_pay(self):
-        pay = self.wage * self.contract + self.comissionType * self.comission
+        pay = self.wage * self.contract + self.commissionType * self.commission
         return pay
 
     def __str__(self):
@@ -19,9 +19,9 @@ class Employee:
             string += f"{self.name} works on a monthly salary of {self.wage}"
         else:
             string += f"{self.name} works on a contract of {self.contract} hours at {self.wage}/hour"
-        if self.comissionType == 1:
+        if self.commissionType == 1:
             string += f" and receives a bonus commission of {self.commission}."
-        elif self.comissionType == 0:
+        elif self.commissionType == 0:
             string += f"."
         else:
             string += f" and receives a commission for {self.commissionType} contract(s) at {self.commission}/contract."
