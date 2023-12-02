@@ -2,18 +2,23 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name):
+    def __init__(self, name, contractType, commissionType, wage):
         self.name = name
+        self.contractType = contractType
+        self.comission = comissionType
+        self.wage = wage
 
     def get_pay(self):
-        pass
+        if contractType = "Monthly":
+            pay = wage
+        return pay
 
     def __str__(self):
-        return self.name
+        return f"{self.name} works on a {self.contractType} salary of {self.wage}. Their total pay is {self.get_pay()}."
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
-billie = Employee('Billie')
+billie = Employee('Billie', 'Monthly', 'None', 4000)
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlie = Employee('Charlie')
