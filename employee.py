@@ -26,6 +26,7 @@ class Employee:
         else:
             string += f" and receives a commission for {self.commissionType} contract(s) at {self.commission}/contract."
         string +=  f" Their total pay is {self.get_pay()}."
+        return string
         
 
 
