@@ -10,7 +10,7 @@ class Employee:
 
     def get_pay(self):
         if self.contractType == "Monthly":
-            pay = wage
+            pay = self.wage
         return pay
 
     def __str__(self):
