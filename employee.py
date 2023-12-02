@@ -4,7 +4,7 @@
 class Employee:
     def __init__(self, name, contractLength, commissionType, wage):
         self.name = name
-        self.contractType = contractType
+        self.contract = contractLength
         self.comission = commissionType
         self.wage = wage
 
@@ -13,10 +13,10 @@ class Employee:
         return pay
 
     def __str__(self):
-        if self.contractLength == 1:
+        if self.contract == 1:
             return f"{self.name} works on a monthly salary of {self.wage}. Their total pay is {self.get_pay()}."
         else:
-            return f"{self.name} works on a contract of {self.contractLength} at {self.wage}/hour. Their total pay is {self.get_pay()}."
+            return f"{self.name} works on a contract of {self.contract} at {self.wage}/hour. Their total pay is {self.get_pay()}."
         
 
 
