@@ -9,7 +9,7 @@ class Employee:
         self.wage = wage
 
     def get_pay(self):
-        pay = self.wage * self.contractLength
+        pay = self.wage * self.contract
         return pay
 
     def __str__(self):
