@@ -9,7 +9,7 @@ class Employee:
         self.wage = wage
 
     def get_pay(self):
-        if self.contractType == "Monthly":
+        if self.contractType == "monthly":
             pay = self.wage
         return pay
 
@@ -18,7 +18,7 @@ class Employee:
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
-billie = Employee('Billie', 'Monthly', 'None', 4000)
+billie = Employee('Billie', 'monthly', 'None', 4000)
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlie = Employee('Charlie', "", "", 25)
