@@ -13,7 +13,11 @@ class Employee:
         return pay
 
     def __str__(self):
-        return f"{self.name} works on a {self.contractType} salary of {self.wage}. Their total pay is {self.get_pay()}."
+        if self.contractLength == 1:
+            return f"{self.name} works on a monthly salary of {self.wage}. Their total pay is {self.get_pay()}."
+        else:
+            return f"{self.name} works on a contract of {self.contractLength} at {self.wage}/hour. Their total pay is {self.get_pay()}."
+        
 
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
